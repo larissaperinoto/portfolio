@@ -1,13 +1,12 @@
 import React from 'react';
-import { Header } from './components';
+import { About, Header } from './components';
 import './css/app.css';
 
-function App() {
+export default function App() {
   return (
     <>
     <Header />
+    <About />
     </>
   );
 }
-
-export default App;
