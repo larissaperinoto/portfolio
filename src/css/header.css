@@ -1,0 +1,84 @@
+.header-nav {
+  padding: 100px 100px;
+  display: flex;
+  align-items: center;
+}
+
+.title-name {
+  color: rgb(0, 0, 0, 0.7);
+  font-size: 30px;
+  text-shadow: -4px 2px 0px rgba(93, 91, 91, 0.478);
+  cursor: pointer;
+}
+
+.header-nav nav {
+  margin-left: 400px;
+}
+
+.header-nav nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  font-size: 26px;
+  padding: 20px 20px;
+  border: 1px solid rgba(250, 239, 225, 0.3);
+}
+
+.header-nav nav a:hover {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.header-background {
+  display: flex;
+  width: 100%;
+}
+
+.box-background-one,
+.box-background-two {
+  border-top: 620px solid transparent;
+  width: 50%;
+}
+
+.box-background-one {
+  border-left: 750px solid rgba(233, 215, 235, 0.7);
+}
+
+.box-background-two {
+  border-right: 750px solid rgb(233, 215, 235, 0.7);
+}
+
+.title-page-principal {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  font-weight: 600;
+  line-height: 0.8;
+  font-size: 50px;
+  text-align: left;
+  color: rgba(40, 39, 36, 0.8);
+  position: absolute;
+  z-index: 1;
+  animation-name: identifier;
+  animation-duration: 2s;
+}
+
+.text-two {
+  font-size: 50%;
+}
+
+.text-three {
+  display: block;
+  font-size: 110%;
+  text-shadow: -4px 4px 0px rgba(152, 54, 54, 0.478);
+}
+
+.text-four {
+  margin-left: 280px;
+}
+
+@keyframes identifier {
+  0% { top: 0; }
+  100% { top: 240px; }
+}

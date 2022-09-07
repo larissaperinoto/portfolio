@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(248, 238, 226)
+}
+
+body::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0;
+}
+
+.greenShadow {
+  text-shadow: -4px 4px 0px rgba(150, 209, 167, 0.778);
+}
+
+.orangeShadow {
+  text-shadow: -4px 4px 0px rgba(202, 144, 102, 0.778);
+}
+
+.pinkShadow {
+  text-shadow: -4px 4px 0px rgba(209, 150, 205, 0.778);
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.whiteTextColor {
+  color: rgba(255, 255, 255, 0.67);
+}
