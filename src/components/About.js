@@ -5,12 +5,9 @@ import '../css/about.css';
 export default function About() {
   return (
     <section id="about">
-      <div className="about-background">
-        <p className="whiteTextColor ">{`{`}
-          <span>profile</span>
-          {' '}
-          {`}`}
-        </p>
+      <div className="about-background whiteTextColor ">
+        <p>{`{`}<span>profile</span></p>
+        <p>{`}`}</p>
       </div>
       <div>
         <div className="about-profile">
