@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Header } from './components';
+import { About, Header, Projects } from './components';
 import './css/app.css';
 
 export default function App() {
@@ -7,6 +7,7 @@ export default function App() {
     <>
     <Header />
     <About />
+    <Projects />
     </>
   );
 }
