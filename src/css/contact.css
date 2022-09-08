@@ -1,13 +1,42 @@
 #contact {
-  background-color: rgba(65, 93, 72, 0.5);
-  align-items: center;
-  bottom: 0;
+  padding: 80px 0;
+}
+
+.contact_background_container {
   display: flex;
-  justify-content: center;
+}
+
+.contact_background_green {
+  background-color: rgba(90, 127, 99, 0.35);
+  height: 300px;
   width: 100%;
+}
+
+.contact_background_purple h3 {
+  align-self: center;
+  margin-top: 10px;
+  font-size: 200px;
+  padding: 0 50px;
+}
+
+.contact_background_purple h3 span {
+  font-size: 40px;
+}
+
+.contact_background_purple {
+  background-color: rgba(94, 57, 99, 0.449);
+  left: -10%;
+  position: relative;
+  text-align: end;
+  height: 300px;
+  width: 150%;
+}
+
+.contact_container {
+  text-align: center;
   padding: 50px 0;
 }
 
-#contact a img {
+.contact_container a img {
   padding: 10px;
 }
