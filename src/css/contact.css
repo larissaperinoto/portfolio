@@ -1,0 +1,13 @@
+#contact {
+  background-color: rgba(65, 93, 72, 0.5);
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
+}
+
+#contact a img {
+  padding: 10px;
+}
