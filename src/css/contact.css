@@ -7,7 +7,7 @@
 }
 
 .contact_background_green {
-  background-color: rgba(90, 127, 99, 0.35);
+  background-color: rgba(112, 156, 123, 0.35);
   height: 300px;
   width: 100%;
 }
@@ -24,12 +24,14 @@
 }
 
 .contact_background_purple {
-  background-color: rgba(94, 57, 99, 0.449);
+  background-color: rgba(157, 107, 163, 0.449);
   left: -10%;
   position: relative;
   text-align: end;
   height: 300px;
   width: 150%;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 .contact_container {
