@@ -1,4 +1,8 @@
 import React from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { BiLogIn } from 'react-icons/bi'
+import { AiOutlineHeart } from 'react-icons/ai';
+import { BsFillShareFill } from 'react-icons/bs';
 
 import { data } from '../services/projectsData';
 import '../css/projects.css';
@@ -10,17 +14,25 @@ export default function Projects() {
           {
             data.map((project, index) => (
               <li className="slide" key={ index }>
+                <div>
+                  <button type="button" title='GitHub'>
+                    <a href={ project.repositorie } target='blank' >
+                      <BsGithub />
+                    </a>
+                  </button>
+                  <button type="button" title='Website'>
+                    <a href={ project.url } target='blank'>
+                      <BiLogIn />
+                    </a>
+                  </button>
+                  <button type='button' title='Like'>
+                      <AiOutlineHeart />
+                  </button>
+                  <button type='button' title='Share'>
+                      <BsFillShareFill />
+                  </button>
+                </div>
                 <img src={ project.image } alt={ project.name } width="100%" />
-                <button type="button">
-                  <a href={ project.repositorie } target='blank'>
-                    Repositorie
-                  </a>
-                </button>
-                <button type="button">
-                  <a href={ project.url } target='blank'>
-                    Website
-                  </a>
-                </button>
               </li>
             ))
           }
