@@ -1,61 +1,33 @@
 #projects {
-  margin-top: 120px;
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
+  margin-top: 100px;
+  padding: 100px 0;
 }
-
-.project-background {
+/* .project-background {
+  align-self:  center;
   border-top: 50px solid transparent;
   border-bottom: 100px solid transparent;
-  height: 600px;
-  width: 100%;
+  height: 700px;
   border-right: 570px solid rgba(250, 128, 114, 0.35);
-}
+} */
 
-#projects p {
+/* #projects p {
   position: absolute;
   align-self: center;
   transform: rotate(270deg);
-  left: 55%;
+  left: 65%;
   font-size: 300px;
 }
 
 #projects p span {
   font-size: 50px;
   font-weight: 600;
-}
+} */
 
-.projects-container {
-  position: absolute;
-  width: 50%;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: 70px;
-  color: rgb(0, 0, 0, 0.7);
-  animation: showDivs 4s;
-}
-
-.project-container-menu {
-  border: 2px solid rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  margin: 20px;
-  padding: 20px;
-}
 
 @keyframes showDivs {
-    0% { margin-left: -100px; }
-    10% { margin-bottom: -50px; }
-    20% { margin-left: 0px; }
-}
-
-.projects-container div img {
-  width: 100%;
-  opacity: 0.8;
-  margin-top: 20px;
+  0% { margin-left: -100px; }
+  10% { margin-bottom: -50px; }
+  20% { margin-left: 0px; }
 }
 
 .projects-container div h3 {
@@ -93,9 +65,8 @@
 }
 
 .menu div {
-  border-right  : 2px solid rgba(0, 0, 0, 0.7);
+  border-right: 2px solid rgba(0, 0, 0, 0.7);
   width: 5%;
-  height: 100%;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -104,4 +75,33 @@
 
 .menu div i:hover {
   opacity: 0.8;
+}
+
+
+.projects-container {
+  display: flex;
+  list-style: none;
+  overflow: scroll;
+  padding: 0;
+  width: 100%;
+}
+
+.slide {
+  border: 2px solid rgba(0, 0, 0, 0.869);
+  flex: 2 0 50%;
+  height: 100%;
+  padding: 40px;
+  margin: 0 0.25em;
+  text-align: center;
+  width: 40%;
+}
+
+.slider img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.projects-container::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0;
 }
