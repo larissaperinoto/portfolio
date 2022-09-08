@@ -10,18 +10,24 @@ export default function Projects() {
           {
             data.map((project, index) => (
               <li className="slide" key={ index }>
-                <div className="menu">
-                  <div><i className="fa-regular fa-heart"></i></div>
-                  <div><i className="fa-regular fa-circle-left"></i></div>
-                  <div><i className="fa-regular fa-circle-right"></i></div>
-                  <div><i className="fa-regular fa-window-minimize"></i></div>
-                  <div><i className="fa-regular fa-arrows-up-down-left-right"></i></div>
-                </div>
                 <img src={ project.image } alt={ project.name } width="100%" />
+                <button type="button">
+                  <a href={ project.repositorie } target='blank'>
+                    Repositorie
+                  </a>
+                </button>
+                <button type="button">
+                  <a href={ project.url } target='blank'>
+                    Website
+                  </a>
+                </button>
               </li>
             ))
           }
       </ul>
+      <div className='project-background whiteTextColor'>
+        <p>{`{`}<span>Projects</span>{`}`}</p>
+      </div>
     </section>
   );
 }

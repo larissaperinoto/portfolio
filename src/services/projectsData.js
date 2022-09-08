@@ -32,7 +32,7 @@ export const data = [
   {
     image: 'https://github.com/larissaperinoto/portifolio/blob/main/src/image/TodoList.png?raw=true',
     name: 'To Do List',
-    url: 'https://github.com/larissaperinoto/project-to-do-list',
-    repositorie: 'https://larissaperinoto.github.io/project-to-do-list/',
+    url: 'https://larissaperinoto.github.io/project-to-do-list/',
+    repositorie: 'https://github.com/larissaperinoto/project-to-do-list',
   },
 ];
