@@ -4,6 +4,10 @@ import '../css/header.css';
 export default function Header() {
   return (
     <header id="header">
+      <div className="location_container">
+        <img src="https://img.icons8.com/dusk/64/000000/worldwide-location.png" alt='Location'/>
+        <span>Paraná, Brazil</span>
+      </div>
       <div class="header-nav">
         <a href="www.linkedin.com/in/larissaperinoto">
           <h1 class="title-name"><span>Larissa</span> Perinoto</h1>
