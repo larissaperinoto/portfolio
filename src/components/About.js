@@ -23,14 +23,16 @@ export default function About() {
         </div>
         <div className="about-text">
           <h2 className="pinkShadow">About me</h2>
-          <p> Os cometas são corpos celestes que, junto com os planetas e asteroides, integram o Sistema Solar.
-            Eles são descritos por astrônomos como "pedras de gelo sujo".
-            Isso se deve a sua constituição, que é, basicamente, gases congelados, poeira cósmica e rochas.
-          </p>
           <p>
             Um cometa é um pequeno corpo gelado do Sistema Solar que, ao passar perto do Sol,
             aquece e começa a liberar gases, processo que é chamado de desgaseificação.
             Isso produz uma atmosfera visível ou coma e, às vezes, também uma cauda.
+          </p>
+          <p>
+            Since I became interested in technology, I have been immersed in a universe of new discoveries and learning.
+            I started to study programming independently until in March 2022 I started the Web Development course at Trybe.
+            With Trybe I trained as a Front-end Developer with a focus on HTML, CSS, JavaScript, React, Redux, Context API, Unit Tests with Jest and Integration Tests with RTL.
+            In addition to improving important soft skills such as communication and teamwork.
           </p>
         </div>
       </div>

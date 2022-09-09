@@ -4,10 +4,14 @@
   align-items: center;
 }
 
+.header-nav a {
+  text-decoration: none;
+}
+
 .title-name {
   color: rgb(0, 0, 0, 0.7);
   font-size: 30px;
-  text-shadow: -4px 2px 0px rgba(93, 91, 91, 0.478);
+  text-shadow: -4px 2px 0px rgba(137, 106, 157, 0.478);
   cursor: pointer;
 }
 

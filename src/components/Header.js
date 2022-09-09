@@ -5,7 +5,9 @@ export default function Header() {
   return (
     <header id="header">
       <div class="header-nav">
-        <h1 class="title-name"><span>Larissa</span> Perinoto</h1>
+        <a href="www.linkedin.com/in/larissaperinoto">
+          <h1 class="title-name"><span>Larissa</span> Perinoto</h1>
+        </a>
         <nav>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
