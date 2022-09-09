@@ -38,7 +38,6 @@
   flex: 2 0 50%;
   padding: 20px;
   margin: 10px 0 10px 0;
-  text-align: center;
   width: 80%;
 }
 
@@ -56,6 +55,10 @@
   justify-content: flex-end;
 }
 
+.slide img {
+  margin-top: 15px;
+}
+
 .slide button {
   padding: 7px 10px;
   margin: 0px 5px 10px 0;
@@ -70,4 +73,9 @@
 .projects-container::-webkit-scrollbar {
   visibility: hidden;
   width: 0;
+}
+
+.share_message {
+  position: absolute;
+  margin-top: -10px;
 }
