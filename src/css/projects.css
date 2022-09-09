@@ -35,6 +35,7 @@
 .slide {
   border: 2px solid rgba(0, 0, 0, 0.7);
   box-shadow: 5px 1px 1px solid black;
+  text-align: right;
   flex: 2 0 50%;
   padding: 20px;
   margin: 10px 0 10px 0;
@@ -73,9 +74,4 @@
 .projects-container::-webkit-scrollbar {
   visibility: hidden;
   width: 0;
-}
-
-.share_message {
-  position: absolute;
-  margin-top: -10px;
 }

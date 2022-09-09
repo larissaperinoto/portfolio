@@ -48,8 +48,9 @@ nav a:hover {
 
 .title-name {
   color: rgb(0, 0, 0, 0.7);
-  font-size: 30px;
-  text-shadow: -4px 2px 0px rgba(137, 106, 157, 0.478);
+  font-size: 50px;
+  font-family: 'Cookie', cursive;
+  text-shadow: -4px 2px 0px rgba(217, 179, 242, 0.478);
   cursor: pointer;
 }
 

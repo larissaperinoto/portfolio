@@ -9,16 +9,16 @@ import { data } from '../services/projectsData';
 import '../css/projects.css';
 
 export default function Projects() {
-  const [shareMessage, setShareLink] = useState('');
+  const [shareMessage, setShareLink] = useState({ id:'', messsage: '' });
 
-  const shareButton = (url) => {
+  const shareButton = ({ id, url}) => {
     clipboardCopy(url);
-    setShareLink('Copied!!');
+    setShareLink({ id: id, messsage: 'Copied!!' });
   }
 
   useEffect(() => {
-    if (shareMessage) {
-      setTimeout(() => setShareLink(''), 2000);
+    if (shareMessage.id !== '') {
+      setTimeout(() => setShareLink({ id:'', messsage: '' }), 2000);
     }
   }, [shareMessage]);
 
@@ -42,11 +42,14 @@ export default function Projects() {
                   <button type='button' title='Like'>
                       <AiOutlineHeart />
                   </button>
-                  <button type='button' title='Share' onClick={ () => shareButton(project.url) }>
+                  <button type='button' title='Share' onClick={ () => shareButton(project) }>
                       <BsFillShareFill />
                   </button>
                 </div>
-                <p className='share_message'>{ shareMessage }</p>
+                <p
+                  className='share_message'
+                >{ shareMessage.id === project.id && shareMessage.messsage }
+                </p>
                 <img src={ project.image } alt={ project.name } width="100%" />
               </li>
             ))
