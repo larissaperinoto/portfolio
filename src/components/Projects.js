@@ -3,6 +3,7 @@ import clipboardCopy from 'clipboard-copy';
 import { BsGithub } from 'react-icons/bs';
 import { BiLogIn } from 'react-icons/bi'
 import { AiOutlineHeart } from 'react-icons/ai';
+import { AiFillHeart } from 'react-icons/ai';
 import { BsFillShareFill } from 'react-icons/bs';
 
 import { data } from '../services/projectsData';
@@ -10,11 +11,24 @@ import '../css/projects.css';
 
 export default function Projects() {
   const [shareMessage, setShareLink] = useState({ id:'', messsage: '' });
+  const [isLiked, setIsLiked] = useState([...JSON.parse(localStorage.getItem('like')) || []]);
 
   const shareButton = ({ id, url}) => {
     clipboardCopy(url);
     setShareLink({ id: id, messsage: 'Copied!!' });
   }
+
+  const likeButton = (project) => {
+    if (isLiked.some((item) => item.id === project.id)) {
+      setIsLiked([...isLiked.filter((item) => item.id !== project.id)]);
+    } else {
+      setIsLiked([...isLiked, project]);
+    }
+  }
+
+  useEffect(() => {
+    localStorage.setItem('like', JSON.stringify(isLiked));
+  }, [isLiked]);
 
   useEffect(() => {
     if (shareMessage.id !== '') {
@@ -39,8 +53,9 @@ export default function Projects() {
                       <BiLogIn />
                     </a>
                   </button>
-                  <button type='button' title='Like'>
-                      <AiOutlineHeart />
+                  <button type='button' title='Like' onClick={ () => likeButton(project) }>
+                      { isLiked && isLiked.some((item) => item.id === project.id)
+                        ? <AiFillHeart /> : <AiOutlineHeart /> }
                   </button>
                   <button type='button' title='Share' onClick={ () => shareButton(project) }>
                       <BsFillShareFill />

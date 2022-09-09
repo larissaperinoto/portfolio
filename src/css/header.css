@@ -11,7 +11,8 @@
 
 .location_container span {
   font-family: 'Zilla Slab', serif;
-  font-size: 18px;
+  font-size: 20px;
+  color: rgba(40, 39, 36, 0.8);
   margin-left: 0.1%;
 }
 
@@ -47,7 +48,7 @@ nav a:hover {
 }
 
 .title-name {
-  color: rgb(0, 0, 0, 0.7);
+  color: rgb(0, 0, 0, 0.5);
   font-size: 50px;
   font-family: 'Cookie', cursive;
   text-shadow: -4px 2px 0px rgba(217, 179, 242, 0.478);
