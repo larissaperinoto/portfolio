@@ -57,12 +57,12 @@
 }
 
 .slide img {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .slide button {
   padding: 7px 10px;
-  margin: 0px 5px 10px 0;
+  margin: 0px 5px 5px 0;
   background-color: transparent;
   border: 2px solid rgba(32, 32, 32, 0.7);
   font-size: 18px;
@@ -74,4 +74,8 @@
 .projects-container::-webkit-scrollbar {
   visibility: hidden;
   width: 0;
+}
+
+.share_message {
+  min-height: 20px;
 }
