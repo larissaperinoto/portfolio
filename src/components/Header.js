@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import Context from '../context/Context';
 import '../css/header.css';
 import Menu from './Menu';
 import MenuIcon from './MenuIcon';
 
 export default function Header() {
-  const [clickMenu, setClickMenu] = useState(false);
+  const { showMenu } = useContext(Context);
 
   return (
     <header id="header">
@@ -20,7 +21,7 @@ export default function Header() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          { clickMenu ? <Menu /> :  <MenuIcon /> }
+          { showMenu ? <Menu /> :  <MenuIcon /> }
         </nav>
       </div>
       <div class="header-background">
