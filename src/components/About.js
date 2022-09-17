@@ -6,10 +6,9 @@ export default function About() {
   return (
     <section id="about">
       <div className="about-background whiteTextColor ">
-        <p>{`{`}<span>profile</span></p>
-        <p>{`}`}</p>
+        <p>{`{`}<span>profile</span>{`}`}</p>
       </div>
-      <div>
+      <div className="about_infos">
         <div className="about-profile">
           <div className="about-profile-background">
             <img src={ Profile } alt="Larissa's profile" />
