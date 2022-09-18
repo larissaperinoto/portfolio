@@ -1,5 +1,5 @@
 #contact {
-  padding: 80px 0;
+  padding: 5% 0;
 }
 
 .contact_background_container {
@@ -8,15 +8,14 @@
 
 .contact_background_green {
   background-color: rgba(112, 156, 123, 0.35);
-  height: 300px;
   width: 100%;
 }
 
 .contact_background_purple h3 {
   align-self: center;
-  margin-top: 10px;
+  margin-top: 2%;
   font-size: 200px;
-  padding: 0 50px;
+  padding: 0 5%;
 }
 
 .contact_background_purple h3 span {
@@ -30,8 +29,8 @@
   text-align: end;
   height: 300px;
   width: 150%;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 10%;
 }
 
 .contact_container {
@@ -40,5 +39,23 @@
 }
 
 .contact_container a img {
-  padding: 10px;
+  padding: 1%;
 }
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 770px) {
+
+
+}
+
+@media (max-width: 690px) {
+
+}
+
+@media (max-width: 599px) {
+
+}
+

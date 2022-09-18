@@ -1,13 +1,15 @@
 #projects {
-  padding: 100px 0;
+  padding: 16% 0;
   display: flex;
   align-items: center;
+  height: 100vh;
 }
+
 .project-background {
-  border-top: 50px solid transparent;
-  border-bottom: 70px solid transparent;
-  height: 700px;
-  border-right: 500px solid rgba(250, 128, 114, 0.35);
+  border-top: 10vh solid transparent;
+  border-bottom: 20vh solid transparent;
+  border-right: 70vh solid rgba(250, 128, 114, 0.35);
+  height: 100%;
 }
 
 .project-background p {
@@ -27,17 +29,14 @@
   align-items: center;
   list-style: none;
   overflow: scroll;
-  padding: 0;
-  width: 100%;
-  height: 700px;
+  height: 100%;
 }
 
 .slide {
   border: 2px solid rgba(0, 0, 0, 0.7);
   box-shadow: 5px 1px 1px solid black;
   text-align: right;
-  flex: 2 0 50%;
-  padding: 20px;
+  padding: 2%;
   margin: 10px 0 10px 0;
   width: 80%;
 }
@@ -78,4 +77,70 @@
 
 .share_message {
   min-height: 20px;
+}
+
+.mobile-project-background {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+
+  .project-background {
+    border-right: 60vh solid rgba(250, 128, 114, 0.35);
+  }
+
+  .project-background p {
+    left: 53%;
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  #projects {
+    flex-direction: column;
+  }
+
+  .project-background {
+    border-right: 60vh solid rgba(250, 128, 114, 0.35);
+  }
+
+  .project-background p {
+    left: 53%;
+    font-size: 300px;
+  }
+
+  .project-background {
+    display: none;
+  }
+
+  .mobile-project-background {
+    display: block;
+    width: 100%;
+    background-color: rgba(250, 128, 114, 0.4);
+    font-size: 200px;
+    font-weight: 600;
+  }
+
+  .mobile-project-background p span{
+    font-size: 50px;
+  }
+
+  .projects-container {
+    height: 60%;
+    margin-top: 5%;
+  }
+
+  .slide {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 690px) {
+
+  .mobile-project-background p {
+    font-size: 150px;
+  }
+
 }

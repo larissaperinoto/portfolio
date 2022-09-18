@@ -38,6 +38,9 @@ export default function Projects() {
 
   return (
     <section id="projects">
+      <div className="mobile-project-background whiteTextColor">
+        <p >{`{`}<span>Projects</span>{`}`}</p>
+      </div>
       <ul className="projects-container">
           {
             data.map((project, index) => (

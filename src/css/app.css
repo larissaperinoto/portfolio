@@ -24,6 +24,10 @@ body::-webkit-scrollbar {
   text-shadow: -4px 4px 0px rgba(209, 150, 205, 0.778);
 }
 
+.salmonShadown {
+  text-shadow: -4px 4px 0px rgba(152, 54, 54, 0.478);
+}
+
 .cursorPointer {
   cursor: pointer;
 }

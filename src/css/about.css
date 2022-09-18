@@ -4,7 +4,7 @@
   justify-content: center;
   width: 100%;
   margin-top: 10%;
-  height: 100vw;
+  height: 110vh;
 }
 
 .about_infos {
@@ -19,7 +19,8 @@
 }
 
 .about-background p {
-  font-size: 300px;
+  font-size: 400px;
+  font-weight: 600;
 }
 
 .about-background p span {
@@ -84,12 +85,13 @@
 @media (max-width: 1000px) {
 
   #about {
-    display: block;
+    flex-direction: column;
   }
 
   .about-background {
     width: 100%;
     height: 60%;
+    margin-top: 80%;
     text-align: left;
   }
 
@@ -100,6 +102,10 @@
 
   .about-background p {
     font-size: 250px;
+  }
+
+  .about-text {
+    margin-bottom: 70%;
   }
 }
 
