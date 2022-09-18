@@ -39,7 +39,7 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="mobile-project-background whiteTextColor">
-        <p >{`{`}<span>Projects</span>{`}`}</p>
+        <p >{`{`}<span>projects</span>{`}`}</p>
       </div>
       <ul className="projects-container">
           {
@@ -74,7 +74,7 @@ export default function Projects() {
           }
       </ul>
       <div className='project-background whiteTextColor'>
-        <p>{`{`}<span>Projects</span>{`}`}</p>
+        <p>{`{`}<span>projects</span>{`}`}</p>
       </div>
     </section>
   );

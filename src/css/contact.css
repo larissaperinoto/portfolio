@@ -14,12 +14,13 @@
 .contact_background_purple h3 {
   align-self: center;
   margin-top: 2%;
-  font-size: 200px;
+  font-size: 300px;
+  font-weight: 600;
   padding: 0 5%;
 }
 
 .contact_background_purple h3 span {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .contact_background_purple {
@@ -27,7 +28,6 @@
   left: -10%;
   position: relative;
   text-align: end;
-  height: 300px;
   width: 150%;
   border-bottom-right-radius: 10%;
   border-top-right-radius: 10%;
@@ -44,18 +44,14 @@
 
 @media (max-width: 1000px) {
 
-}
+  .contact_background_purple h3 {
+    font-size: 150px;
+  }
 
-@media (max-width: 770px) {
-
-
-}
-
-@media (max-width: 690px) {
-
-}
-
-@media (max-width: 599px) {
+  .contact_background_purple {
+    background-color: rgba(157, 107, 163, 0.449);
+    left: 0;
+  }
 
 }
 

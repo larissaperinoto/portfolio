@@ -16,6 +16,7 @@
   position: absolute;
   left: 70%;
   font-size: 300px;
+  font-weight: 600;
 }
 
 .project-background p span {
@@ -92,7 +93,6 @@
   .project-background p {
     left: 53%;
   }
-
 }
 
 @media (max-width: 770px) {
@@ -103,11 +103,6 @@
 
   .project-background {
     border-right: 60vh solid rgba(250, 128, 114, 0.35);
-  }
-
-  .project-background p {
-    left: 53%;
-    font-size: 300px;
   }
 
   .project-background {
@@ -127,14 +122,12 @@
   }
 
   .projects-container {
-    height: 60%;
     margin-top: 5%;
   }
 
   .slide {
     width: 70%;
   }
-
 }
 
 @media (max-width: 690px) {
@@ -142,5 +135,4 @@
   .mobile-project-background p {
     font-size: 150px;
   }
-
 }

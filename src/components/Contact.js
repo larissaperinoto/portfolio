@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="contact_background_green"/>
         <div className="contact_background_purple">
           <h3 className="whiteTextColor">
-            {`{`}<span>Contact me </span>{`}`}
+            {`{`}<span>contact me </span>{`}`}
           </h3>
         </div>
       </div>
