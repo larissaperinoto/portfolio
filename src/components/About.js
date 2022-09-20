@@ -23,15 +23,14 @@ export default function About() {
         <div className="about-text">
           <h2 className="pinkShadow">About me</h2>
           <p>
-            Um cometa é um pequeno corpo gelado do Sistema Solar que, ao passar perto do Sol,
-            aquece e começa a liberar gases, processo que é chamado de desgaseificação.
-            Isso produz uma atmosfera visível ou coma e, às vezes, também uma cauda.
+            I really like to spend my time consuming series, documentaries, old movies and lots of music.
+            I like to practice yoga and go hiking in nature.
+            I've been an ovo-lactovegetarian for over two years and I love to cook vegan food for my friends.
           </p>
           <p>
             Since I became interested in technology, I have been immersed in a universe of new discoveries and learning.
-            I started to study programming independently until in March 2022 I started the Web Development course at Trybe.
-            With Trybe I trained as a Front-end Developer with a focus on HTML, CSS, JavaScript, React, Redux, Context API, Unit Tests with Jest and Integration Tests with RTL.
-            In addition to improving important soft skills such as communication and teamwork.
+            I started to study programming independently until in March 2022 I started the Web Development course at Trybe and recently graduated as a Front-end Developer.
+            I'm currently working as a Monitor at Trybe and studying Back-end development.
           </p>
         </div>
       </div>
