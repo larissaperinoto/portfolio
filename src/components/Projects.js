@@ -68,7 +68,7 @@ export default function Projects() {
                   className='share_message'
                 >{ shareMessage.id === project.id && shareMessage.messsage }
                 </p>
-                <img src={ project.image } alt={ project.name } width="100%" />
+                <img src={ project.thumbnails[0] } alt={ project.name } width="100%" />
               </li>
             ))
           }
